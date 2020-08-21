@@ -7,6 +7,8 @@
 	padding: 0;
 }
 
+/* Scroll Effect */
+
 html {
   scroll-behavior: smooth;
 }
@@ -262,7 +264,7 @@ footer {
 
 /* Resonsive design */
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   #about {
     flex-direction: column;
   }
@@ -314,15 +316,17 @@ footer {
 
   .main-navigation ul.main-menu {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: #f2f2f2;
     width: 50%;
     height: 100%;
+    color: #48392a;
     border-right: #ccc 1px solid;
     opacity: 0.9;
     padding: 30px;
+    font-weight: bold;
     transform: translateX(-500px);
     transition: transform 0.5s ease-in-out;
   }
@@ -342,7 +346,7 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   #portfolio .portfolio-list {
     grid-template-columns: 1fr;
   }
