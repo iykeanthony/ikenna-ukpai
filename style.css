@@ -1,0 +1,366 @@
+/* Global Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	height: 100%;
+	box-sizing: border-box !important;
+  /*background-color: #48392a !important;*/
+  color: #fbf2c0 !important;
+  font-family: "Montserrat", sans-serif !important;
+
+}
+
+#particles-js{
+	background: #48392a !important;
+	position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f96f5d;
+  cursor: pointer;
+}
+
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Navigation */
+
+.menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+nav h1{
+	font-size: 3em;
+	font-family: cursive;
+	font-weight: 800px;
+	padding: .042em;
+}
+
+nav h1 span{
+	color: #fbf2c0;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-menu li {
+  margin-left: 1em;
+  padding-top: 0.6rem;
+}
+
+.main-menu a {
+  color: inherit;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Showcase */
+.showcase {
+  margin: 7em 0.5em;
+  line-height: 1.6;
+}
+
+/* .showcase p {
+  color: #fadcac;
+} */
+
+.showcase h2 {
+  font-size: 3rem;
+  font-weight: 900px;
+}
+
+.showcase .skill {
+  color: white;
+}
+.showcase .specialty {
+  margin-top: 3.3rem;
+}
+
+.showcase .specialty p {
+  color: #fbf2c0;
+}
+
+.btn {
+  background: #f96f5d;
+  color: inherit;
+  padding: .7em 2.7em;
+  /* border: 0.3em solid #cef2c9; */
+  border: none;
+  margin: 1.5em 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  border-radius: 0.3em;
+  display: inline-block;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 5px #022b23;
+  background: #c06e52;
+}
+
+#showcase hr {
+  width: 80%;
+  margin: 9em auto;
+  border: #c06e52 3px solid;
+  text-align: center;
+  /* display: inline-block; */
+}
+
+/* About section */
+
+#about {
+  margin: 6em 0.8em 8em 0.8em;
+  display: flex;
+  justify-content: center;
+}
+
+/* #about hr {
+  width: 80%;
+  border: #c06e52 1px solid;
+  text-align: center;
+  display: inline-block;
+} */
+
+#about img {
+  width: 60%;
+  height: 13em;
+  border-radius: 50%;
+  margin: 2em 0em 1.5em 3.5em;
+}
+
+
+
+#about h2 {
+  color: white;
+  margin-bottom: 1.5em;
+}
+
+#about p {
+  line-height: 1.5;
+}
+
+/* Portfolio */
+
+#portfolio {
+  text-align: center;
+}
+
+#portfolio h2 {
+  margin: 3em 0 5em 0;
+  color: white;
+}
+
+#portfolio hr {
+  width: 70%;
+  border: #c06e52 3px solid;
+  text-align: center;
+  display: inline-block;
+}
+
+#portfolio .portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  margin: 4em 0 8em 0;
+}
+
+/* Portfolio-cards */
+.card-item img {
+  width: 100%;
+  height: 16em;
+}
+
+.card-item h3 {
+  margin: 0.8rem 0rem;
+  color: white;
+}
+.card-item p {
+  margin-bottom: 0.4rem;
+}
+
+.card-item a:hover i {
+  margin-left: 0.6em;
+  margin-top: 0.2em;
+}
+
+/* Contact */
+
+#contact {
+  text-align: center;
+  border-top: 5px solid #c06e52;
+  margin: 1em 6em;
+  padding: 4.5em 2em;
+}
+
+#contact h3 {
+  font-size: 2rem;
+  font-weight: 700px;
+  color: white;
+  margin-bottom: 6rem;
+}
+
+#contact .para {
+  margin-bottom: 7rem;
+  color: #f96f5d;
+}
+
+#contact .social {
+  display: flex;
+  justify-content: center;
+}
+
+#contact i {
+  padding: 0 0.5em;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin: 1.5em 6em;
+  padding: 2em 1em 0.5em 1em;
+  border-top: 5px solid #c06e52;
+}
+
+/* Resonsive design */
+
+@media (max-width: 750px) {
+  #about {
+    flex-direction: column;
+  }
+
+  #portfolio .portfolio-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #about img {
+    width: 60%;
+    /* text-align: center; */
+    height: 18em;
+    border-radius: 50%;
+    margin: 3em 6em;
+  }
+
+  #about h2 {
+    color: white;
+    margin-bottom: 1em;
+    text-align: center;
+    margin: 1em;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  #about p {
+    text-align: center;
+  }
+
+  #contact .social {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #contact {
+    margin: 1em 2.5em;
+    padding: 4em 1em;
+  }
+
+  /* Hamburger menu */
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+
+  .main-navigation ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f2f2f2;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .main-navigation ul.main-menu li {
+    padding: 10px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
+
+  .main-navigation ul.main-menu li:last-child {
+    border-bottom: 0;
+  }
+
+  .main-navigation ul.main-menu.show {
+    transform: translateX(-20px);
+  }
+}
+
+@media (max-width: 500px) {
+  #portfolio .portfolio-list {
+    grid-template-columns: 1fr;
+  }
+
+  #about img {
+    width: 60%;
+    /* text-align: center; */
+    height: 14em;
+    border-radius: 50%;
+    margin: 3em 4em;
+  }
+
+  #contact {
+    margin: 1em;
+    padding: 4em 0.5em;
+  }
+
+  .showcase {
+    text-align: center;
+  }
+}
